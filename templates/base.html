@@ -24,28 +24,28 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/">About</a>
+              <a class="nav-link" href="{{ url_for('about') }}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Code of Conduct</a>
+              <a class="nav-link" href="{{ url_for('code_of_conduct') }}">Code of Conduct</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Contact</a>
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">COVID-19</a>
+              <a class="nav-link" href="{{ url_for('covid19') }}">COVID-19</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Diversity</a>
+              <a class="nav-link" href="{{ url_for('diversity') }}">Diversity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Speaking</a>
+              <a class="nav-link" href="{{ url_for('speaking') }}">Speaking</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Sponsors</a>
+              <a class="nav-link" href="{{ url_for('sponsors') }}">Sponsors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/">Venue</a>
+              <a class="nav-link" href="{{ url_for('venue') }}">Venue</a>
             </li>
           </ul>
         </div>
@@ -62,7 +62,7 @@
           <a href="https://twitter.com/PyCarolinas">@PyCarolinas Twitter</a> |
           <a href="https://join.slack.com/t/pycarolinas/shared_invite/zt-857y0sxu-htcDtfEvRcjo0gU2wkcwwQ">Slack invitation</a> |
           <a href="https://mailchi.mp/8ad40e1455a4/pycarolinas-news">Newsletter sign-up</a> |
-          Code of Conduct
+          <a href="{{ url_for('code_of_conduct') }}">Code of Conduct</a>
         </p>
         <p class="m-0 text-center text-white">&copy; PyCarolinas 2020</p>
       </div>

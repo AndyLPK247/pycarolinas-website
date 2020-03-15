@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<header class="bg-white text-black">
+<header class="banner-header bg-white text-black">
   <div class="container text-center">
     <img src="{{ url_for('static', filename='img/pycarolinas.png') }}" class="img-fluid" alt="PyCarolinas 2020">
     <h2>Saturday, June 20 *</h2>
@@ -25,20 +25,20 @@
     </div>
     <div class="row">
       <div class="col d-flex align-items-stretch">
-        <div class="card text-black">
+        <div class="card text-black bg-light">
           <div class="card-body">
             <h5 class="card-title">Lightning Talks</h5>
             <p class="card-text">
               Instead of formal tracks, we will hold 5-10 minute talks all day long!
               We welcome talks about anything Python-related:
               software dev, data science, nifty projects, language tricks, etc.
-              Anyone can sign up to speak.
+              <a href="{{ url_for('speaking') }}">Sign up</a> to speak!
             </p>
           </div>
         </div>
       </div>
       <div class="col d-flex align-items-stretch">
-        <div class="card text-black">
+        <div class="card text-black bg-light">
           <div class="card-body">
             <h5 class="card-title">Collab Clusters</h5>
             <p class="card-text">
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="col d-flex align-items-stretch">
-        <div class="card text-black">
+        <div class="card text-black bg-light">
           <div class="card-body">
             <h5 class="card-title">Hallway Track</h5>
             <p class="card-text">

@@ -1,7 +1,11 @@
-header {
+section {
+  padding: 50px 0;
+}
+
+.banner-header {
   padding: 156px 0 100px;
 }
 
-section {
-  padding: 50px 0;
+.blank-header {
+  padding-top: 56px;
 }
