@@ -20,5 +20,4 @@ bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
-  return "Hello, PyCarolinas!"
-  #return render_template('index.html')
+  return render_template('index.html')

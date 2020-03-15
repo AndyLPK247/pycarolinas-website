@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block title %}PyCarolinas 2020{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link href="{{ url_for('static', filename='css/info-page.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">PyCarolinas 2020</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#venue">Venue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#speaking">Speaking</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-white text-black">
+  <div class="container text-center">
+    <img src="{{ url_for('static', filename='img/pycarolinas.png') }}" class="img-fluid" alt="PyCarolinas 2020">
+    <h2>Saturday, June 20 *</h2>
+    <h2>Raleigh, NC</h2>
+  </div>
+</header>
+
+<section id="about" class="bg-danger">
+  <div class="container">
+    <div class="row text-white">
+      <div class="col-lg-8 mx-auto">
+        <h2>PyCarolinas is back!</h2>
+        <p class="lead">
+          Join us for a one-day "unconference" all about Python.
+          Our event will empower the Python community to be awesome right here in the Carolinas.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex align-items-stretch">
+        <div class="card text-black">
+          <div class="card-body">
+            <h5 class="card-title">Lightning Talks</h5>
+            <p class="card-text">
+              Instead of formal tracks, we will hold 5-10 minute talks all day long!
+              We welcome talks about anything Python-related:
+              software dev, data science, nifty projects, language tricks, etc.
+              Anyone can sign up to speak.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex align-items-stretch">
+        <div class="card text-black">
+          <div class="card-body">
+            <h5 class="card-title">Collab Clusters</h5>
+            <p class="card-text">
+              Want to team up with other Pythonistas to work on a project?
+              Or maybe you want to learn some new skills?
+              We'll set aside tables for folks to collaborate together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex align-items-stretch">
+        <div class="card text-black">
+          <div class="card-body">
+            <h5 class="card-title">Hallway Track</h5>
+            <p class="card-text">
+              Python conferences are great because they bring people together.
+              We'll provide open space for everyone to share ideas, show code, and swap stickers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="venue" class="bg-warning">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Venue</h2>
+        <p class="lead">
+          PyCarolinas will be held at Red Hat Annex, 190 E Davie St, Raleigh, NC 27601 - 
+          right in the heart of downtown Raleigh.
+          We hope to accommodate about 100 (or more) Pythonistas!
+          Lunch will also be provided.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="registration" class="bg-info text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Registration</h2>
+        <p class="lead">Registration will open May 1, 2020*. Tickets will be <emph>FREE!</emph></p>
+        <p>* Dates may change due to COVID-19.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">&copy; PyCarolinas 2020</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+{% endblock %}
