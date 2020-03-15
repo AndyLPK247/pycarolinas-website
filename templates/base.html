@@ -8,13 +8,67 @@
 
     {% block styles %}
     {{ bootstrap.load_css() }}
+    <link href="{{ url_for('static', filename='css/extra.css') }}" rel="stylesheet">
     {% endblock %}
 
     {% endblock %}
   </head>
   <body>
+    {% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/">PyCarolinas 2020</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Code of Conduct</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">COVID-19</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Diversity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Speaking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Venue</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% endblock %}
+
     {% block content %}{% endblock %}
 
+    {% block footer %}
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          <a href="https://twitter.com/PyCarolinas">@PyCarolinas Twitter</a> |
+          <a href="https://join.slack.com/t/pycarolinas/shared_invite/zt-857y0sxu-htcDtfEvRcjo0gU2wkcwwQ">Slack invitation</a> |
+          <a href="https://mailchi.mp/8ad40e1455a4/pycarolinas-news">Newsletter sign-up</a> |
+          Code of Conduct
+        </p>
+        <p class="m-0 text-center text-white">&copy; PyCarolinas 2020</p>
+      </div>
+    </footer>
+    {% endblock %}
+    
     {% block scripts %}
     {{ bootstrap.load_js() }}
     {% endblock %}
