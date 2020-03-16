@@ -2,6 +2,11 @@
   "dev": {
       "app_function": "pycarolinas.app",
       "aws_region": "us-east-2",
-      "s3_bucket": "pycarolinas-website"
+      "s3_bucket": "pycarolinas-website-dev"
+  },
+  "prod": {
+    "app_function": "pycarolinas.app",
+    "aws_region": "us-east-2",
+    "s3_bucket": "pycarolinas-website"
   }
 }
