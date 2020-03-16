@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}PyCarolinas 2020 - Schedule{% endblock %}
+
+{% block content %}
+
+<header class="blank-header"></header>
+
+<section id="code-of-conduct" class="bg-light">
+  <div class="container">
+    <div class="row text-black">
+      <div class="col-lg-8 mx-auto">
+
+        <div class="info-section">
+          <h2 class="text-danger">Schedule</h2>
+          <p>
+            Below is a rough schedule of events:
+          </p>
+          <ul>
+            <li>8:00am-9:00am: Registration</li>
+            <li>9:00am-9:30am: Welcome Address</li>
+            <li>9:30am-12:00pm: Morning Talks and Collabs</li>
+            <li>12:00pm-1:00pm: Lunch Break</li>
+            <li>1:00pm-5:00pm: Afternoon Talks and Collabs</li>
+            <li>5:00pm-5:15pm: Farewell Address</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h3 class="text-danger">Registration</h3>
+          <p>
+            Please arrive on time to check in for the conference.
+          </p>
+        </div>
+
+        <div class="info-section">
+          <h3 class="text-danger">Lightning Talks</h3>
+          <p>
+            A "lightning talk" is a brief talk about an interesting topic.
+            They can show how to use a Python library, demo a cool project, or share lessons learned.
+            Lightning talks give ordinary attendees a chance to share extraordinary things!
+          </p>
+          <p>
+            At PyCarolinas, <b>all talks will be lightning talks.</b>
+            Our lightning talks will be 5 to 10 minutes long.
+            We encourage anyone who is interested to give a lightning talk, especially first-time speakers.
+            If you are interested in giving a talk, please <a href="{{ url_for('speaking') }}">sign up</a>!
+          </p>
+        </div>
+
+        <div class="info-section">
+          <h3 class="text-danger">Collab Clusters</h3>
+          <p>
+            A "collab cluster" is a space for a group to work together on a project.
+            It could be a bunch of coders hacking together on an open source project.
+            It could be a group discussion about a special interest.
+            It could be someone leading an impromptu tutorial.
+            It could also be someone offering help or guidance to others who are stuck on problems.
+          </p>
+          <p>
+            At PyCarolinas 2020, we want to use the space we have to foster organic collaboration.
+            Feel free to start your own collab cluster on the day of the conference.
+            If you'd like to plan ahead, please <a href="{{ url_for('speaking') }}">sign up</a> so we can promote it for you!
+          </p>
+        </div>
+
+        <div class="info-section">
+          <h3 class="text-danger">Hallway Track</h3>
+          <p>
+            The "hallway track" refers to spontaneous encounters at the conference.
+            They typically happen in spaces where people cross paths.
+            We should have plenty of space for attendees to mix and mingle.
+            Strike up conversations, share projects, and swap stickers!
+          </p>
+        </div>
+
+        <div class="info-section">
+          <h3 class="text-danger">Meals and Refreshments</h3>
+          <p>
+            Meals and refreshments are dependent upon sponsors.
+            Right now, the only meal we intend to provide is a pizza lunch with soft drinks.
+            We are open to providing morning coffee and possibly a dinner party, too.
+            Please refer to the <a href="{{ url_for('sponsors') }}">sponsors</a> page
+            and <a href="{{ url_for('contact') }}">contact us</a> if you can help find sponsors!
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

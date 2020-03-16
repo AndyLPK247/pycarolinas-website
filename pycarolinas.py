@@ -48,6 +48,11 @@ def diversity():
   return render_template('diversity.html')
 
 
+@app.route('/schedule')
+def schedule():
+  return render_template('schedule.html')
+
+
 @app.route('/speaking')
 def speaking():
   return render_template('speaking.html')
