@@ -10,6 +10,18 @@ section {
   padding-top: 56px;
 }
 
+.bg-logo-red {
+  background-color: #AC5062 !important;
+}
+
+.bg-logo-yellow {
+  background-color: #C8D181 !important;
+}
+
+.bg-logo-blue {
+  background-color: #0E79FF !important;
+}
+
 .info-section {
   padding: 15px 0 15px;
 }
